@@ -1,0 +1,14 @@
+ion-content{
+    .fab-icon{
+        text-align: center;
+        width: 100px;
+        margin-left: -50px;
+        ion-fab-button{
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        ion-label{
+            font-weight: bold;
+        }
+    }
+}

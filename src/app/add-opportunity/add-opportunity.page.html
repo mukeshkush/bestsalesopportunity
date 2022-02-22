@@ -1,0 +1,136 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Add Opportunity</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  
+  <div class="main-box ion-margin-top">
+    <ion-row>
+        <ion-col sizeLg="12" sizeMd="12" sizeXs="12" class="ion-padding">
+          <div class="ion-margin-top">
+            <label>Opportunity Owner</label>
+            <ion-item lines="none" class="customItem highlighted bg-item cursorP">
+              <ion-label style="margin-left: 10px;">Select an option</ion-label>
+              <ion-select class="select-value" [value]="opportunity.opp_owner">
+                <ion-select-option value="Jessika">Jessika Lynch</ion-select-option>
+                <ion-select-option value="Group2">Chris Manhattan</ion-select-option>
+                <ion-select-option value="Group3">Sanya Iyer</ion-select-option>
+                <ion-select-option value="Group3">Jinpin</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </div>
+
+          <div class="ion-margin-top">
+            <label>Name</label>
+            <ion-item lines="none" class="customItem highlighted bg-item cursorP">
+              <ion-input [(ngModel)]="opportunity.opp_name" type="text" placeholder="Opportunity name" class="text-input cursorP"></ion-input>
+            </ion-item>
+          </div>
+          
+          <div class="ion-margin-top">
+            <label>Mobile Numer</label>
+            <ion-item lines="none" class="customItem highlighted bg-item cursorP">
+              <ion-input [(ngModel)]="opportunity.mob_num" type="text" placeholder="Mobile number" class="text-input cursorP"></ion-input>
+            </ion-item>
+          </div>
+
+          <div class="ion-margin-top">
+            <label>Email</label>
+            <ion-item lines="none" class="customItem highlighted bg-item cursorP">
+              <ion-input [(ngModel)]="opportunity.email" type="Email" placeholder="Email" class="text-input cursorP"></ion-input>
+            </ion-item>
+          </div>
+
+          <div class="ion-margin-top">
+            <label>Product Group Name</label>
+            <ion-item lines="none" class="customItem highlighted bg-item cursorP">
+              <ion-label style="margin-left: 10px;">Select an option</ion-label>
+              <ion-select class="select-value" [value]="opportunity.prod_group_name">
+                <ion-select-option value="Group">Group</ion-select-option>
+                <ion-select-option value="Group2">Group</ion-select-option>
+                <ion-select-option value="Group3">Group</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </div>
+
+          <div class="ion-margin-top">
+            <label>Prospect Status</label>
+            <ion-item lines="none" class="customItem highlighted bg-item cursorP">
+              <ion-label style="margin-left: 10px;">Select an option</ion-label>
+              <ion-select class="select-value" [value]="opportunity.prospect_status">
+                <ion-select-option value="ExistingAccount">Existing Account</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </div>
+
+          <div class="ion-margin-top">
+            <label>Lead Source</label>
+            <ion-item lines="none" class="customItem highlighted bg-item cursorP">
+              <ion-label style="margin-left: 10px;">Select an option</ion-label>
+              <ion-select class="select-value" [value]="opportunity.lead_source">
+                <ion-select-option value="Service">Service</ion-select-option>
+                </ion-select>
+            </ion-item>
+          </div>
+
+          
+          <div class="ion-margin-top">
+            <label for="status">Status</label>
+            <ion-item lines="none" class="customItem highlighted bg-item cursorP">
+              <ion-label style="margin-left: 10px;">Select an option</ion-label>
+              <ion-select class="select-value" [value]="opportunity.status">
+                <ion-select-option value="Qualified">Qualified</ion-select-option>
+                <ion-select-option value="Unqualified">Unqualified</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </div>
+
+          <div class="ion-margin-top note">
+            <label>Note</label>
+            <ion-item lines="none" class="customItem highlighted bg-item cursorP">
+              <ion-label style="margin-left: 10px;">Select an option</ion-label>
+              <ion-select id="status" class="select-value" [value]="opportunity.note_type">
+                <ion-select-option value="GENERAL">General</ion-select-option>
+                <ion-select-option value="NORMAL">Other</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item style="margin-top: 10px;" lines="none" class="customAreaItem highlighted">
+              <ion-textarea [(ngModel)]="opportunity.note" placeholder="Enter note" class="text-area"></ion-textarea>
+            </ion-item>
+          </div>
+
+          <div class="ion-margin-top">
+            <label>Description</label>
+            <ion-item lines="none" class="customAreaItem highlighted">
+              <ion-textarea [(ngModel)]="opportunity.description" placeholder="Enter description" class="text-area"></ion-textarea>
+            </ion-item>
+          </div>
+
+
+          <div class="ion-margin-top attachment">
+            <label>Lead Attachment</label>
+            <ion-item lines="none" class="customItem highlighted bg-item cursorP">
+              <ion-label style="margin-left: 10px;">Select Category</ion-label>
+              <ion-select id="status" class="select-value" [value]="opportunity.leadAttachment">
+                <ion-select-option value="MKL_LEAD_CATEGORY">MKL_LEAD_CATEGORY</ion-select-option>
+                <!-- <ion-select-option value="Category2">Official</ion-select-option> -->
+              </ion-select>
+            </ion-item>
+            <div style="margin-left: 10px;">
+              <ion-icon class="plus-icon" name="add-outline"></ion-icon>
+            </div>
+          </div>
+
+          <div class="ion-text-center ion-margin-top">
+            <ion-button id="btnSave" name="btnSave" expand="full" class="button-theme">Submit</ion-button>
+          </div>
+        </ion-col>
+        </ion-row>
+        
+  </div>
+</ion-content>
