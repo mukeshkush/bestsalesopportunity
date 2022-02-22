@@ -1,10 +1,3 @@
-# Covid19AppPart4SideMenu
-COVID-19 Plasma Milaap App - Ionic 5+ UI - PART IV - Responsive Side-menu
-
-Watch the Full Playlist on YouTube at https://www.youtube.com/playlist?list=PLixvNT19uDK6ht4J3AONPZ6AbrPseFVmp
-
-<img src="https://github.com/Nykz/Covid19AppPart4SideMenu/blob/main/screenshots/THUMBNAIL%20Part%20IV.png" width="800" height="400" />
-
 ### Steps to Setup this Wonderful App in your system
 
 1.Download the zipped project
